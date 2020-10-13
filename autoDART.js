@@ -17,3 +17,14 @@ window.addEventListener('load', function() {
     document.evaluate("//select[@name='input_3']",document.body,null,9,null).singleNodeValue.selectedIndex=3;
     // alert("Your page has loaded.")
 }, false);
+
+/* DISABLE TIMEOUT
+
+function keepAlive() {
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', "/restricted_file_url");
+    httpRequest.send(null);
+}
+
+setInterval(keepAlive, 840000);  //My session expires at 15 minutes
+*/
